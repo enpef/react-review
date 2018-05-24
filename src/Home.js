@@ -9,7 +9,7 @@ class Home extends React.Component {
                         <h1 className="title">
                             Hero title
                         </h1>
-                        <h3 className="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
+                        <h3 className="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed eiusmod tempor incididunt ut labore et dolore magna aliqua <br />sed eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
                     </div>
                 </div>
             </section>
