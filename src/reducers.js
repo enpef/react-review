@@ -29,10 +29,35 @@ function totalClick(state = 0, action){
     }
 }
 
+const initialState = {isRejected: true, data: null}
+function ReposDetail(state = initialState, action){
+    switch (action.type) {
+        case 'LOAD_REPOS_PENDING':
+            return {
+                isRejected: false,
+                data: null
+            }
+        case 'LOAD_REPOS_FULFILLED':
+        console.log("passs")
+            return {
+                isRejected: false,
+                data: action.payload
+            }
+        case 'LOAD_REPOS_REJECTED':
+            return {
+                isRejected: true,
+                data: null
+            }
+        default:
+            return state
+    }
+}
+
 const reducers = combineReducers({
     plus: countPlus,
     minus: countMinus,
-    totalclick: totalClick
+    totalclick: totalClick,
+    ReposDetail
 })
 
 export default reducers
