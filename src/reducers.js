@@ -38,10 +38,15 @@ function ReposDetail(state = initialState, action){
                 data: null
             }
         case 'LOAD_REPOS_FULFILLED':
-        console.log("passs")
+        // console.log(action.payload)
             return {
                 isRejected: false,
-                data: action.payload
+                data: action.payload,
+                star: action.payload.stargazers_count,
+                Languages: action.payload.language,
+                fork: action.payload.forks,
+                img: action.payload.organization.avatar_url
+
             }
         case 'LOAD_REPOS_REJECTED':
             return {

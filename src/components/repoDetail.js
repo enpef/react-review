@@ -29,6 +29,7 @@ class RepoDetail extends React.Component {
 
     render() {
         const { RepoDetail } = this.props
+        console.log(RepoDetail.data)
         if(RepoDetail.isRejected){
             return <div>Error...</div>
         }
