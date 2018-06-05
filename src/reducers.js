@@ -35,7 +35,8 @@ function ReposDetail(state = initialState, action){
         case 'LOAD_REPOS_PENDING':
             return {
                 isRejected: false,
-                data: null
+                data: null,
+                img: "http://blog.teamtreehouse.com/wp-content/uploads/2015/05/InternetSlowdown_Day.gif"
             }
         case 'LOAD_REPOS_FULFILLED':
         // console.log(action.payload)
