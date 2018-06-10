@@ -5,6 +5,7 @@ services:
     build: .
     ports:
       - "8080:3000"
+      - "35729:35729"
     volumes:
       - .:/var/www/app
     command: ["npm", "start"]
